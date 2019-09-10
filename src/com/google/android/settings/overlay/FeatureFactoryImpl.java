@@ -4,7 +4,9 @@ import android.content.Context;
 import androidx.annotation.Keep;
 
 import com.android.settings.accounts.AccountFeatureProvider;
+import com.android.settings.search.SearchFeatureProvider;
 import com.google.android.settings.accounts.AccountFeatureProviderGoogleImpl;
+import com.google.android.settings.search.SearchFeatureProviderGoogleImpl;
 
 import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 import com.google.android.settings.fuelgauge.PowerUsageFeatureProviderGoogleImpl;
@@ -13,6 +15,7 @@ import com.google.android.settings.fuelgauge.PowerUsageFeatureProviderGoogleImpl
 public final class FeatureFactoryImpl extends com.android.settings.overlay.FeatureFactoryImpl {
     private AccountFeatureProvider mAccountFeatureProvider;
     private PowerUsageFeatureProvider mPowerUsageProvider;
+    private SearchFeatureProvider mSearchFeatureProvider;
 
     @Override
     public AccountFeatureProvider getAccountFeatureProvider() {
@@ -28,5 +31,13 @@ public final class FeatureFactoryImpl extends com.android.settings.overlay.Featu
             mPowerUsageProvider = new PowerUsageFeatureProviderGoogleImpl(context.getApplicationContext());
         }
         return mPowerUsageProvider;
+    }
+
+    @Override
+    public SearchFeatureProvider getSearchFeatureProvider() {
+        if (mSearchFeatureProvider == null) {
+            mSearchFeatureProvider = new SearchFeatureProviderGoogleImpl();
+        }
+        return mSearchFeatureProvider;
     }
 }

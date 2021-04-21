@@ -72,4 +72,6 @@
     <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
     <string name="wake_when_plugged_or_unplugged_title">接上或拔除電源時喚醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">接上或拔除電源時開啟螢幕</string>
+    <string name="three_finger_gesture">三指螢幕截圖</string>
+    <string name="three_finger_gesture_summary">使用三根手指向下滑動即可截取螢幕</string>
 </resources>

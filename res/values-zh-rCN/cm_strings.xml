@@ -77,4 +77,6 @@
     <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
     <string name="fast_charging_title">快速充电</string>
     <string name="fast_charging_summary">禁用以减少设备在充电时产生的热量或延长电池的使用寿命</string>
+    <string name="three_finger_gesture">三指截屏</string>
+    <string name="three_finger_gesture_summary">使用三根手指向下滑动即可截屏</string>
 </resources>

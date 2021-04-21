@@ -31,4 +31,6 @@
     <string name="touchscreen_hovering_summary">允許您把手指懸浮在螢幕上，像滑鼠般控制瀏覽器、遠程桌面等</string>
     <string name="wake_when_plugged_or_unplugged_title">當接上喚醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">當連接或拔除電源時開啓螢幕</string>
+    <string name="three_finger_gesture">三指螢幕截圖</string>
+    <string name="three_finger_gesture_summary">使用三根手指向下滑動即可截取螢幕</string>
 </resources>

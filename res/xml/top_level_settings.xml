@@ -164,7 +164,16 @@
         settings:highlightableMenuKey="@string/menu_key_accounts"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <Preference
+        android:fragment="org.lineagemod.settings.ModSettings"
+        android:icon="@drawable/ic_homepage_mod"
+        android:key="top_level_mod"
+        android:order="0"
+        android:title="@string/mod_settings_title"
+        android:summary="@string/mod_settings_summary"
+        settings:controller="org.lineagemod.TopLevelModSettingsPreferenceController"/>
+
+    <Preference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
         android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"

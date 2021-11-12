@@ -44,7 +44,19 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "ModSettings/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages org.lineagemod.settings"],
+
+    resource_dirs: ["res",
+                    "ModSettings/res"
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",

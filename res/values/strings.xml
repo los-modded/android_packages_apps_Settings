@@ -7980,6 +7980,8 @@
          the carrier to determine if your contacts support enhanced features, such as video calling
          and RCS messaging. [CHAR LIMIT=NONE]-->
     <string name="contact_discovery_opt_in_dialog_message_no_carrier_defined">Your contacts\u2019 phone numbers will be periodically sent to your carrier.<xliff:g id="empty_line" example="  ">\n\n</xliff:g>This info identifies whether your contacts can use certain features, like video calls or some messaging features.</string>
+    <!-- Enabled 5G Mode title.  [CHAR LIMIT=50] -->
+    <string name="enabled_5g_mode_title">Enable 5G</string>
     <!-- Preferred network type title.  [CHAR LIMIT=50] -->
     <string name="preferred_network_type_title">Preferred network type</string>
     <!-- Preferred network type summary.  [CHAR LIMIT=100] -->
@@ -12584,6 +12586,8 @@
 
     <!-- Text for Network mode 5g recommended [CHAR LIMIT=NONE] -->
     <string name="network_5G_recommended">5G (recommended)</string>
+    <!-- Text for Network 5g lte[CHAR LIMIT=NONE] -->
+    <string name="network_5G_lte" translatable="false">5G</string>
     <!-- Text for Network lte [CHAR LIMIT=NONE] -->
     <string name="network_lte_pure" translatable="false">LTE</string>
     <!-- Text for Network 4g [CHAR LIMIT=NONE] -->
@@ -12638,7 +12642,16 @@
     <!-- Mobile network setting screen, summary of Mobile data switch preference when the network
          is unavailable, the preference selection will be disabled. [CHAR LIMIT=NONE] -->
     <string name="mobile_data_settings_summary_unavailable">No SIM card available</string>
+    <!-- Mobile network setting screen, summary of Mobile data switch preference of default data
+         SUB when the call is ongoing on non-default data SUB, the preference selection will be
+         disabled. [CHAR LIMIT=NONE] -->
+    <string name="mobile_data_settings_summary_default_data_unavailable">
+        Data will automatically switch to this carrier after call ends
+    </string>
 
+    <!-- Mobile network settings screen, title of item showing the name of the default subscription
+    that will be used for data. This only appears in multi-SIM mode. [CHAR LIMIT=NONE] -->
+    <string name="data_preference">Data preference</string>
     <!-- Mobile network settings screen, title of item showing the name of the default subscription
      that will be used for calls. This only appears in multi-SIM mode. [CHAR LIMIT=NONE] -->
     <string name="calls_preference">Calls preference</string>
@@ -13238,6 +13251,19 @@
     <string name="rtt_settings_visible_during_call"></string>
     <!-- Subtext for showing the option of RTT setting. [CHAR LIMIT=NONE] -->
     <string name="rtt_settings_always_visible"></string>
+
+    <!-- Strings for user PLMN setting. [CHAR LIMIT=NONE] -->
+    <string name="uplmn_settings_title">User Controlled PLMN</string>
+    <string name="network_id">Network ID</string>
+    <string name="dialog_network_priority_title">Priority</string>
+    <string name="uplmn_list_setting_add_plmn">New PLMN</string>
+    <string name="gsm_umts_network_preferences_title">Network Mode</string>
+    <string name="gsm_umts_network_preferences_dialogtitle">Network Mode</string>
+    <string name="voicemail_number_not_set">Not set</string>
+    <string name="reading_settings">Reading settings\u2026</string>
+    <string name="updating_settings">Updating settings\u2026</string>
+    <string name="uplmn_settings_summary">Define the preferred PLMNs in priority order</string>
+    <string name="plmn_failure_radio_off">Selecting network failure due to radio OFF or unavailable</string>
 
     <!-- Button label to stop casting on media device. [CHAR LIMIT=40 -->
     <string name="media_output_panel_stop_casting_button">Stop casting</string>
